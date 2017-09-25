@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dev.styleomega.WomenCategoryActivity">
+
+    <include
+        layout="@layout/app_bar_main"/>
+
+    <ScrollView
+        android:layout_width="384dp"
+        android:layout_height="502dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="-708dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_women"
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:text="WOMEN'S SECTION"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/backgroundViewFlipper"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_dress"
+                android:layout_width="172dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="16dp"
+                android:text="Dresses"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/backgroundViewFlipper2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_top" />
+
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="198dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="8dp"
+                android:text="Tops"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/backgroundViewFlipper2"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_skirt"
+                android:layout_width="158dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Skirts"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/backgroundViewFlipper4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_shoe"
+                android:layout_width="113dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="31dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="73dp"
+                android:text="Shoes"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_bag" />
+
+            <TextView
+                android:id="@+id/tv_bag"
+                android:layout_width="168dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Bags"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.995"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <ViewFlipper
+                android:id="@+id/backgroundViewFlipper"
+                android:layout_width="220dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_dress"
+                app:layout_constraintHorizontal_bias="0.392"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/backgroundViewFlipper1">
+
+                <ImageView
+                    android:id="@+id/dress"
+                    android:layout_width="240dp"
+                    android:layout_height="340dp"
+                    android:onClick="direct"
+                    android:scaleType="fitCenter"
+                    android:tag="clothing,women,dresses"
+                    app:srcCompat="@drawable/dress" />
+
+                <ImageView
+                    android:id="@+id/dress1"
+                    android:layout_width="240dp"
+                    android:layout_height="360dp"
+                    android:onClick="direct"
+                    android:scaleType="fitStart"
+                    android:tag="clothing,women,dresses"
+                    app:srcCompat="@drawable/dress1" />
+
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:id="@+id/backgroundViewFlipper1"
+                android:layout_width="198dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_top"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="57dp">
+
+                <ImageView
+                    android:id="@+id/top"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="direct"
+                    android:scaleType="fitStart"
+                    android:tag="clothing,women,tops"
+                    app:layout_constraintVertical_bias="0.64"
+                    app:srcCompat="@drawable/top" />
+
+                <ImageView
+                    android:id="@+id/top1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="direct"
+                    android:scaleType="fitStart"
+                    android:tag="clothing,women,tops"
+                    app:layout_constraintVertical_bias="0.64"
+                    app:srcCompat="@drawable/top1" />
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:id="@+id/backgroundViewFlipper2"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/tv_skirt"
+                app:layout_constraintHorizontal_bias="0.385"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@+id/skirt1"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:onClick="direct"
+                    android:scaleType="fitCenter"
+                    android:tag="clothing,women,skirts"
+                    android:textAlignment="center"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:srcCompat="@drawable/skirt1" />
+
+                <ImageView
+                    android:id="@+id/skirt"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:onClick="direct"
+                    android:scaleType="centerInside"
+                    android:tag="clothing,women,skirts"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:srcCompat="@drawable/skirt" />
+
+
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:id="@+id/backgroundViewFlipper4"
+                android:layout_width="200dp"
+                android:layout_height="212dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_bag"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@+id/bags1"
+                    android:layout_width="200dp"
+                    android:layout_height="245dp"
+                    android:onClick="direct"
+                    android:scaleType="fitCenter"
+                    android:tag="accessories,women,bags"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintVertical_bias="0.695"
+                    app:srcCompat="@drawable/bag1" />
+
+                <ImageView
+                    android:id="@+id/bags"
+                    android:layout_width="200dp"
+                    android:layout_height="230dp"
+                    android:elevation="0dp"
+                    android:onClick="direct"
+                    android:scaleType="fitCenter"
+                    android:tag="accessories,women,bags"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintVertical_bias="0.695"
+                    app:srcCompat="@drawable/bag" />
+
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:id="@+id/backgroundViewFlipper3"
+                android:layout_width="260dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_shoe"
+                app:layout_constraintRight_toLeftOf="@+id/backgroundViewFlipper4">
+
+                <ImageView
+                    android:id="@+id/shoe"
+                    android:layout_width="275dp"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="0dp"
+                    android:onClick="direct"
+                    android:scaleType="fitCenter"
+                    android:tag="accessories,women,shoes"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintVertical_bias="0.695"
+                    app:srcCompat="@drawable/shoe" />
+
+                <ImageView
+                    android:id="@+id/shoe1"
+                    android:layout_width="270dp"
+                    android:layout_height="230dp"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="direct"
+                    android:scaleType="centerInside"
+                    android:tag="accessories,women,shoes"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintVertical_bias="0.695"
+                    app:srcCompat="@drawable/shoe1" />
+
+            </ViewFlipper>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dev.styleomega.ProfileActivity">
+
+    <include
+        layout="@layout/app_bar_main"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="345dp"
+            android:layout_height="484dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintHorizontal_bias="0.207"
+            app:layout_constraintVertical_bias="0.723">
+
+            <TextView
+                android:id="@+id/tv_lastName"
+                android:layout_width="326dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Last Name"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_tel"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="40dp" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="412dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="-13dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="btnSignOut_click"
+                android:text="@string/btn_logout"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_myInquiries"
+                android:layout_width="136dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="viewInquiriesLink"
+                android:text="@string/myInquiriesLink"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_logout"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_resetPassword"
+                android:layout_width="143dp"
+                android:layout_height="29dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="resetPasswordLink"
+                android:text="@string/resetPasswordLink"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_myInquiries"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_editProfileLink"
+                android:layout_width="143dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="editProfileLink"
+                android:text="@string/editProfileLink"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_resetPassword"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="324dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Address"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_editProfileLink"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="48dp" />
+
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="323dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Telephone"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_address"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                tools:layout_editor_absoluteX="42dp" />
+
+            <TextView
+                android:id="@+id/tv_firstName"
+                android:layout_width="326dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="First Name"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_lastName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="48dp" />
+
+            <TextView
+                android:id="@+id/tv_profile"
+                android:layout_width="192dp"
+                android:layout_height="41dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/profile_heading"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_firstName"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

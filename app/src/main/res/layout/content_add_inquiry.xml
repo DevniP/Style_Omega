@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dev.styleomega.AddInquiryActivity">
+
+    <include
+        layout="@layout/app_bar_main" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="540dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/inquiry_heading"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_inquiryBox"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/tv_inquiryBox"
+            android:layout_width="351dp"
+            android:layout_height="219dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/inquiryBox"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_inquiry"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_heading"
+            app:layout_constraintVertical_bias="0.65" />
+
+        <Button
+            android:id="@+id/btn_inquiry"
+            android:layout_width="351dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="119dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="8dp"
+            android:onClick="addInquiry"
+            android:text="@string/btn_inquiry"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

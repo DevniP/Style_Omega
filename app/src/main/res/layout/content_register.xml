@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dev.styleomega.RegisterActivity">
+
+    <include
+        layout="@layout/app_bar_main" />
+
+    <ScrollView
+        android:layout_width="352dp"
+        android:layout_height="485dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="392dp"
+            android:layout_height="538dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.923">
+
+
+            <EditText
+                android:id="@+id/et_pswd3"
+                android:layout_width="316dp"
+                android:layout_height="38dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/re_password"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/textView14"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <EditText
+                android:id="@+id/et_pswd1"
+                android:layout_width="316dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/et_pswd3"
+                app:layout_constraintHorizontal_bias="0.033"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="324dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:onClick="btnCreateAccount_click"
+                android:text="@string/btn_register"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="313dp"
+                android:layout_height="41dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/et_pswd1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <EditText
+                android:id="@+id/et_tel"
+                android:layout_width="321dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/telephone"
+                android:inputType="phone"
+                app:layout_constraintBottom_toTopOf="@+id/textView15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="24dp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="319dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/address"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/et_tel"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="26dp" />
+
+            <EditText
+                android:id="@+id/et_lastName"
+                android:layout_width="319dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/lastName"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/et_address"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="29dp" />
+
+            <EditText
+                android:id="@+id/et_firstName"
+                android:layout_width="319dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/firstName"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/et_lastName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="24dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="313dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="-1dp"
+                android:text="Enter email address and password for your account"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toTopOf="@+id/et_email"
+                app:layout_constraintHorizontal_bias="0.151"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="313dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="-1dp"
+                android:text="The security question and answer will help you recover your password if forgotten"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toTopOf="@+id/et_question"
+                app:layout_constraintHorizontal_bias="0.151"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <EditText
+                android:id="@+id/et_question"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/et_question"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/tv_question"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="32dp" />
+
+            <EditText
+                android:id="@+id/tv_question"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/et_answer"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/btn_register"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="636dp" />
+
+            <TextView
+                android:id="@+id/register_heading"
+                android:layout_width="288dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/register_heading"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/et_firstName"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

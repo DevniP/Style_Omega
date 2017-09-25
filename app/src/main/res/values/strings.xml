@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">STYLEOMEGA</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="login_heading">LOGIN</string>
+    <string name="email">E-mail Address*</string>
+    <string name="password">Password*</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_createAccount">Create an account</string>
+    <string name="link_forgotPassword"><b><u>Forgot password?</u></b></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_log_out">LogOutActivity</string>
+    <string name="btn_logout">Logout</string>
+    <string name="register_heading">CREATE AN ACCOUNT</string>
+    <string name="firstName">First Name*</string>
+    <string name="lastName">Last Name*</string>
+    <string name="address">Address*</string>
+    <string name="telephone">Telephone Number</string>
+    <string name="re_password">Re-enter password*</string>
+    <string name="btn_register">Register</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="profile_heading">MY PROFILE</string>
+    <string name="editProfileLink"><b><u>Edit My Profile</u></b></string>
+    <string name="resetPasswordLink"><b><u>Rest Password</u></b></string>
+    <string name="myInquiriesLink"><b><u>View My Inquiries</u></b></string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="btn_updateProfile">Update Profile</string>
+    <string name="resetPassword_heading">RE-SET PASSWORD</string>
+    <string name="currentPassword">Current password*</string>
+    <string name="enterNewPswd">New password*</string>
+    <string name="renterNewPswd">Re-enter new password*</string>
+    <string name="btn_updatePassword">Update password</string>
+    <string name="btn_addCart">Add To Cart</string>
+    <string name="btn_addList">Add To Wish List</string>
+    <string name="btn_Share">Share</string>
+    <string name="btn_AddInquiry">Add Inquiry</string>
+    <string name="btn_AddReview">Add Review</string>
+    <string name="btn_purchase">Purchase</string>
+    <string name="btn_inquiry">Post Inquiry</string>
+    <string name="btn_review">Post Review</string>
+    <string name="inquiryBox">Enter your inquiry here...</string>
+    <string name="et_name">Enter card holders name*</string>
+    <string name="et_date">Enter card expiration date*</string>
+    <string name="btn_placeOrder">Place Order</string>
+    <string name="et_securityNo">Enter card security number*</string>
+    <string name="et_cardNo">Enter card number*</string>
+    <string name="btn_send_email">Recover Password</string>
+    <string name="et_heading">FORGOT PASSWORD</string>
+    <string name="et_question">Security question*</string>
+    <string name="et_answer">Security answer*</string>
+    <string name="et_newPswd">Enter new password</string>
+    <string name="heading_search">SEARCH RESULTS</string>
+    <string name="inquiry_heading">INQUIRY</string>
+    <string name="heading_review">REVIEW</string>
+
+</resources>

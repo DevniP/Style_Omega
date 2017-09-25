@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dev.styleomega.KidsCategoryActivity">
+
+    <include
+        layout="@layout/app_bar_main" />
+
+    <ScrollView
+        android:layout_width="384dp"
+        android:layout_height="480dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="142dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="160dp"
+            android:layout_marginTop="5dp">
+
+
+            <TextView
+                android:id="@+id/tv_kids"
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:text="KID'S SECTION"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/backgroundViewFlipper1"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_dress"
+                android:layout_width="177dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginStart="16dp"
+                android:text="Girl's Dresses"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/backgroundViewFlipper2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_shirt" />
+
+            <TextView
+                android:id="@+id/tv_shirt"
+                android:layout_width="198dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Boy's Shirts"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/backgroundViewFlipper3"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_gshoe"
+                android:layout_width="158dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="17dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Girl's Shoes"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_bshoe" />
+
+
+            <TextView
+                android:id="@+id/tv_bshoe"
+                android:layout_width="192dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="100dp"
+                android:text="Boy's Shoes"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="172dp" />
+
+            <ViewFlipper
+                android:id="@+id/backgroundViewFlipper3"
+                android:layout_width="200dp"
+                android:layout_height="268dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_bshoe"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@+id/boyshoe1"
+                    android:layout_width="170dp"
+                    android:layout_height="260dp"
+                    android:onClick="direct"
+                    android:scaleType="fitXY"
+                    android:tag="accessories,boy,shoes"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_bshoe"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:srcCompat="@drawable/boyshoe1" />
+
+                <ImageView
+                    android:id="@+id/boyshoe"
+                    android:layout_width="178dp"
+                    android:layout_height="260dp"
+                    android:onClick="direct"
+                    android:scaleType="centerCrop"
+                    android:tag="accessories,boy,shoes"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_bshoe"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:srcCompat="@drawable/boyshoe" />
+
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:id="@+id/backgroundViewFlipper1"
+                android:layout_width="199dp"
+                android:layout_height="258dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_shirt"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toRightOf="@+id/backgroundViewFlipper"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="177dp"
+                tools:layout_editor_absoluteY="49dp">
+
+                <ImageView
+                    android:id="@+id/boytshirt1"
+                    android:layout_width="170dp"
+                    android:layout_height="287dp"
+                    android:onClick="direct"
+                    android:scaleType="centerCrop"
+                    android:tag="clothing,boy,tshirts"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_shirt"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_kids"
+                    app:layout_constraintVertical_bias="0.64"
+                    app:srcCompat="@drawable/boytshirt1" />
+
+                <ImageView
+                    android:id="@+id/boytshirt"
+                    android:layout_width="170dp"
+                    android:layout_height="287dp"
+                    android:onClick="direct"
+                    android:scaleType="centerCrop"
+                    android:tag="clothing,boy,tshirts"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_shirt"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_kids"
+                    app:layout_constraintVertical_bias="0.64"
+                    app:srcCompat="@drawable/boytshirt" />
+
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:id="@+id/backgroundViewFlipper2"
+                android:layout_width="190dp"
+                android:layout_height="260dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_gshoe"
+                app:layout_constraintHorizontal_bias="0.909"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/backgroundViewFlipper3">
+
+                <ImageView
+                    android:id="@+id/girlshoe2"
+                    android:layout_width="250dp"
+                    android:layout_height="260dp"
+                    android:onClick="direct"
+                    android:scaleType="fitCenter"
+                    android:tag="accessories,girl,shoes"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_gshoe"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/boyshoe"
+                    app:srcCompat="@drawable/girlshoe2" />
+
+                <ImageView
+                    android:id="@+id/girlshoe"
+                    android:layout_width="200dp"
+                    android:layout_height="270dp"
+                    android:onClick="direct"
+                    android:scaleType="centerCrop"
+                    android:tag="accessories,girl,shoes"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_gshoe"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/boyshoe"
+                    app:srcCompat="@drawable/girlshoe" />
+
+
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:id="@+id/backgroundViewFlipper"
+                android:layout_width="173dp"
+                android:layout_height="260dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="-19dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_dress"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <ImageView
+                    android:id="@+id/girldress"
+                    android:layout_width="197dp"
+                    android:layout_height="390dp"
+                    android:elevation="0dp"
+                    android:onClick="direct"
+                    android:scaleType="centerCrop"
+                    android:tag="clothing,girl,dresses"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_dress"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/boytshirt"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_kids"
+                    app:layout_constraintVertical_bias="0.695"
+                    app:srcCompat="@drawable/girldress" />
+
+                <ImageView
+                    android:id="@+id/girldress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="direct"
+                    android:scaleType="fitCenter"
+                    android:tag="clothing,girl,dresses"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_dress"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/boytshirt"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_kids"
+                    app:layout_constraintVertical_bias="0.695"
+                    app:srcCompat="@drawable/girldress2" />
+            </ViewFlipper>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

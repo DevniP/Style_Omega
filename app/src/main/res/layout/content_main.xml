@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dev.styleomega.MainActivity">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/app_bar_main"></include>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="417dp"
+        android:layout_height="554dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include3"
+        app:layout_constraintVertical_bias="0.989"
+        tools:layout_editor_absoluteY="100dp"
+        tools:layout_editor_absoluteX="-11dp">
+
+        <ViewFlipper
+            android:id="@+id/backgroundViewFlipper"
+            android:layout_width="375dp"
+            android:layout_height="515dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="43dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.013"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="15dp">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="14dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/banner" />
+
+            <ImageView
+                android:id="@+id/banenr3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="14dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/banner3" />
+
+            <ImageView
+                android:id="@+id/banner1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="14dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/banner1" />
+
+            <ImageView
+                android:id="@+id/banner2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="14dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/banner2" />
+
+        </ViewFlipper>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

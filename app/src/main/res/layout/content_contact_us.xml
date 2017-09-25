@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dev.styleomega.ContactUsActivity">
+
+    <include
+        layout="@layout/app_bar_main"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="375dp"
+        android:layout_height="508dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="148dp">
+
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_location"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_open"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="233dp"
+            android:layout_height="31dp"
+            android:layout_marginBottom="65dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:paddingBottom="5dp"
+            android:text="CONTACT US"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_info"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.69" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
